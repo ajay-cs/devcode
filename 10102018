@@ -1,0 +1,253 @@
+    1  cd :
+    2  d:
+    3  pwd
+    4  cd /d/devops_git/
+    5  ls -a
+    6  pwd
+    7  ls -a
+    8  pwd
+    9  mkdir devops_git
+   10  ls
+   11  cd devops_git/
+   12  pwd
+   13  cat > mycode.rb
+   14  cat mycode.rb 
+   15  ls
+   16  git init
+   17  ls -a
+   18  ls
+   19  pwd
+   20  git status
+   21  git add mycode.rb 
+   22  git status
+   23  git commit -m "version 1" 
+   24  git config --global user.email "demo@demo.com"
+   25  git config --global user.name "ajay"
+   26  git config --list
+   27  git commit -m "version 1" 
+   28  git status
+   29  cd .git/
+   30  ls
+   31  cd ..
+   32  ls
+   33  cat mycode.rb 
+   34  git log
+   35  mkdir dev_code
+   36  cd dev_code/
+   37  git status
+   38  git init
+   39  git status
+   40  cat > myfile.rb
+   41  git status
+   42  git add myfile.rb 
+   43  git status
+   44  git commit -m "my version of the file"
+   45  git status
+   46  git log
+   47  cat > nextfile
+   48  git status
+   49  git add nextfile 
+   50  git status
+   51  git commit -m "this is demo commit"
+   52  git status
+   53  ls
+   54  git status
+   55  git log
+   56  cat > testfile
+   57  git add testfile 
+   58  git status
+   59  vi testfile 
+   60  git status
+   61  git diff
+   62  vi testfile 
+   63  git diff
+   64  git add testfile 
+   65  git status
+   66  git commit -m "this final version"
+   67  git status
+   68  ls
+   69  git status
+   70  git log --oneline
+   71  git log 
+   72  cd .git/
+   73  ls
+   74  cd ..
+   75  ls
+   76  git ls-files 
+   77  git ls-files  --stage
+   78  pwd
+   79  #This Working Dir
+   80  git log
+   81  touch 1
+   82  git status
+   83  git add 1
+   84  git commit -m "test version"
+   85  git log
+   86  git log --graph --oneline --decorate --all
+   87  pwd
+   88  git status
+   89  git log
+   90  git log --oneline
+   91  git reflog
+   92  git reflog -p
+   93  git reflog -p
+   94  ls
+   95  git reflog -p 1
+   96  git reflog -p myfile.rb
+   97  cd ..
+   98  pwd
+   99  mkdir user_test_code
+  100  cd user_test_code/
+  101  git init
+  102  pwd
+  103  ls
+  104  git status
+  105  git add hexagon.html 
+  106  git commit -m "v1"
+  107  git staus
+  108  git status
+  109  pwd
+  110  ls
+  111  git status
+  112  git remote -v
+  113  pwd
+  114  git remote add origin https://github.com/ajay-cs/devcode.git
+  115  git remote -v
+  116  git remote remove origin
+  117  git remote -v
+  118  git remote add test https://github.com/ajay-cs/devcode.git
+  119  git remote -v
+  120  git remote add test https://github.com/ajay-cs/test1.git
+  121  git push -u test master
+  122  git push -u test master
+  123  git status
+  124  vi hexagon.html 
+  125  vi hexagon.html 
+  126  git status
+  127  git add hexagon.html 
+  128  git commit -m "v2"
+  129  git push test master
+  130  git log
+  131  git reflog 
+  132* git 
+  133  git reflog -p hexagon.html
+  134  git log -s
+  135  git revert e356239bf1bcd3cc1c039ebc948bd5768cc6dd23
+  136  cat hexagon.html 
+  137  git status
+  138  git push test master
+  139  ssh
+  140  ssh -u vagrant 10.0.0.5
+  141  ssh vagrant@10.0.0.5
+  142  cat hexagon.html 
+  143  vi hexagon.html 
+  144  git add hexagon.html 
+  145  git commit -m "my final version"
+  146  git push test master
+  147  git pull test master
+  148  vi hexagon.html 
+  149  git status
+  150  git add hexagon.html 
+  151  git commit -m "approved version"
+  152  git push test master
+  153  git pull test master
+  154  cat hexagon.html 
+  155  git branch
+  156  git status
+  157  git log
+  158  git checkout  dev
+  159  git checkout  dev_b
+  160  git checkout -b dev_b
+  161  git branch
+  162  status
+  163  git status
+  164  git log
+  165  cat hexagon.html 
+  166  git checkout master
+  167  git brach
+  168  git branch
+  169  git checkout dev_b
+  170  git branch
+  171  git branch -m dev_b preprod
+  172  git branch
+  173  vi mycode
+  174  git status
+  175  git add mycode 
+  176  git commit -m "v1"
+  177  git status
+  178  git branch
+  179  git checkout master
+  180  ls
+  181  git checkout preprod
+  182  ls
+  183  git checkout master
+  184  git merge preprod
+  185  ls
+  186  git checkout preprod 
+  187  git push test preprod
+  188  git status -s
+  189  git status -s
+  190  git checkout master
+  191  git status -s
+  192  git status
+  193  vi mycode 
+  194  git status -s
+  195  git add mycode 
+  196  git status -s
+  197  git commit -m "v3"
+  198  git status -s
+  199  ls
+  200  git reflog -p hexagon.html
+  201  git status
+  202  git log 
+  203  git relog -s
+  204  git relog -p
+  205  git reflog  -s
+  206  git relog -p hexagon.html
+  207  git reflog  -s hexagon.html
+  208  cat hexagon.html 
+  209  git reflog  -s hexagon.html
+  210  get log hexagon.html 
+  211  geit log hexagon.html 
+  212  git log hexagon.html 
+  213  git reset e356239bf1bcd3cc1c039ebc948bd5768cc6dd23 
+  214  cat hexagon.html 
+  215  cat hexagon.html 
+  216  git status
+  217  git add *
+  218  git commit -m "new version"
+  219  git log hexagon.html 
+  220  git reset cbb9694642cb1154335b048b18407d8e438b1f5c
+  221  cat hexagon.html 
+  222  cat hexagon.html 
+  223  git reset --hard cbb9694642cb1154335b048b18407d8e438b1f5c
+  224  cat hexagon.html 
+  225  git log --oneline hexagon.html
+  226  git log
+  227  git log hexagon.html
+  228  git reflog  -s hexagon.html
+  229  git reset --hard 30b7c8b
+  230  git reflog  -s hexagon.html
+  231  cat hexagon.html 
+  232  git reflog  -s hexagon.html
+  233  git branch 
+  234  git checkout -b bugnfix
+  235  vi fix.yaml
+  236  git status
+  237  git add *
+  238  git commit  -m "v1"
+  239  git status
+  240  ls
+  241  git checkout preprod 
+  242  ls
+  243  git merge bugfix
+  244  git merge bugnfix
+  245  ls
+  246  vi fix.yaml 
+  247  vi mycode 
+  248  vi mycode 
+  249  vi mycode 
+  250  git status
+  251  git add mycode 
+  252  git commit -m "final"
+  253  history  > 10102018
